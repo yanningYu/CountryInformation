@@ -1,0 +1,8 @@
+<form>
+  <app-country-filter  (clickSearch)="onSearch($event)" ></app-country-filter>
+  <div *ngIf="result$ | async as data">
+    <div *ngIf="!data.isInvalid">
+      <app-country-list [countries]='data.result'></app-country-list>
+    </div>
+  </div>
+</form>

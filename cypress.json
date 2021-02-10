@@ -1,0 +1,7 @@
+{
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "retries": {
+    "runMode": 2,
+    "openMode": 3
+  }
+}
